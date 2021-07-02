@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,8 +17,8 @@ import javax.xml.parsers.SAXParserFactory;
 
 
 public class myProg {
-    public static Set<String> setOfFullNameTag = new HashSet<>();
-    public static Set<String> setOfNonFullNameTag = new HashSet<>();
+    public static TreeSet<String> setOfNonFullNameTag = new TreeSet<>();
+    public static TreeSet<String> setOfFullNameTag = new TreeSet<>();
 
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
         File cars = new File("src/" + args[0]);
